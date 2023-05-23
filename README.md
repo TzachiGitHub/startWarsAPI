@@ -1,8 +1,5 @@
 # startWarsAPI
 
-Project Name
-Backend
-
 Description
 This project is a backend application built using Node.js and Express. It provides an API for retrieving and interacting with film data from the Star Wars API (SWAPI). The application includes endpoints for fetching a list of films, applying pagination and filtering based on film title, as well as retrieving detailed information about a specific film, with the option to expand related data.
 
