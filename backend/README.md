@@ -1,4 +1,4 @@
-# startWarsAPI
+# startWarsAPI - backend
 
 ## Description
 

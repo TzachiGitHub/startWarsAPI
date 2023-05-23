@@ -1,70 +1,89 @@
-# Getting Started with Create React App
+# startWarsAPI - frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
 
-## Available Scripts
+This is a movie search application built with React. It allows users to search for movies and view their details, including characters from the movie.
 
-In the project directory, you can run:
+## Installation
 
-### `npm start`
+To run the application locally, follow these steps:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Clone the repository:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```bash
+git clone https://github.com/username/movie-search-app.git
+```
+2. Change to the project directory:
 
-### `npm test`
+```bash
+cd movie-search-app
+```
+3. Install the dependencies:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+npm install
+```
+4. Start the development server:
 
-### `npm run build`
+```bash
+npm start
+```
+The application will be running at http://localhost:3000.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Usage
+To start the server, run the following command:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+npm start
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The server will start running on http://localhost:4000.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Dependencies
+This project has the following dependencies:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+* @testing-library/jest-dom: "^5.16.5"
+* @testing-library/react: "^13.4.0"
+* @testing-library/user-event: "^13.5.0"
+* antd: "^5.5.1"
+* axios: "^1.4.0"
+* lodash: "^4.17.21"
+* react: "^18.2.0"
+* react-dom: "^18.2.0"
+* react-router-dom: "^5.2.0"
+* react-scripts: "5.0.1"
+* web-vitals: "^2.1.4"
 
-## Learn More
+These dependencies handle various functionalities of the application, including testing, UI components, API requests, and routing.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# Scripts
+The following scripts are available:
+* start: Runs the development server.
+* build: Builds the application for production.
+* test: Launches the test runner.
+* eject: Ejects the configuration files.
 
-### Code Splitting
+You can run these scripts using the following command:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```bash
+npm run <script-name>
+```
 
-### Analyzing the Bundle Size
+## Usage
+The main component of the application is MainPage. It handles the search functionality and displays either the list of movies or the list of characters, based on the user's selection.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+The application consists of the following components:
 
-### Making a Progressive Web App
+MainPage: The main component that displays the search input, movies table, and characters table. It fetches data from an API and handles user interactions.
+MoviesTable: A table component that displays a list of movies with their details. It allows users to expand a movie to view its characters.
+CharactersTable: A table component that displays a list of characters with their details.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Contributing
+Contributions to the Movie Search App are welcome! If you find any issues or have suggestions for improvement, please open an issue or submit a pull request.
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## License
+This project is licensed under the ISC License.
