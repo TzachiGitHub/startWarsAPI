@@ -1,0 +1,28 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Mocha Tests",
+        "type": "node",
+        "request": "launch",
+        "program": "${workspaceFolder}/node_modules/mocha/bin/_mocha",
+        "args": [
+          "-u",
+          "bdd",
+          "--timeout",
+          "999999",
+          "--colors",
+          "${workspaceFolder}/app.test.js"
+        ],
+        "internalConsoleOptions": "openOnSessionStart"
+      },
+      {
+        "name": "Docker Node.js Launch",
+        "type": "docker",
+        "request": "launch",
+        "preLaunchTask": "docker-run: debug",
+        "platform": "node"
+      }
+    ]
+  }
+  
