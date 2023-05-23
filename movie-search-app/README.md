@@ -1,5 +1,8 @@
 # startWarsAPI - frontend
 
+## Please pay attention - the Frontend project has a variable named MAX_PAGE_SIZE which is set to 10, since the star wars api has a very few selected movies - in the current setting it will always show all the movies in the first page. if you'd like to see the implemented pagination - change the 'MAX_PAGE_SIZE' value to be a lower number, like 2.
+
+
 ## Description
 
 This is a movie search application built with React. It allows users to search for movies and view their details, including characters from the movie.
