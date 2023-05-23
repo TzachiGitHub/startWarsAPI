@@ -16,7 +16,7 @@ npm install
 To start the server, run the following command:
 
 ```bash
-npm start
+node app.js
 ```
 
 The server will start running on http://localhost:4000.
