@@ -20,7 +20,7 @@ export const MoviesTable = ({ movies, isLoading, onExpand }) => {
       key: "director",
     },
     {
-      title: "Expand",
+      title: "",
       dataIndex: "expand",
       key: "expand",
       render: (_, movie) => (
@@ -29,7 +29,7 @@ export const MoviesTable = ({ movies, isLoading, onExpand }) => {
             onExpand({ movieId: movie.episode_id, movieTitle: movie.title })
           }
         >
-          More Details
+          Fetch Characters Data
         </Button>
       ),
     },
