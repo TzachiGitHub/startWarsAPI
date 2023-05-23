@@ -9,6 +9,8 @@ const { Title } = Typography;
 const { Search } = Input;
 
 const MAX_PAGE_SIZE = 10;
+const getErrorMessage = (movieTitle) =>
+  `Failed to search for the movie ${movieTitle}, Please try again`;
 
 const MainPage = () => {
   const [searchInput, setSearchInput] = useState("");
@@ -36,7 +38,7 @@ const MainPage = () => {
       setSearchInput(movieTitle);
       setPageIndex(null);
     } catch (error) {
-      message.error(`Failed to search for the movie ${movieTitle}`);
+      message.error(getErrorMessage(movieTitle));
     }
     setIsLoading(false);
   };
@@ -69,7 +71,7 @@ const MainPage = () => {
         setIsLoading(false);
       }
     } catch (error) {
-      message.error(`Failed to search for the movie ${movieTitle}`);
+      message.error(getErrorMessage(movieTitle));
       console.error(error);
       setIsLoading(false);
     }
