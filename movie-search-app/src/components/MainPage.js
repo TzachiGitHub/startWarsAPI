@@ -8,7 +8,7 @@ import { CharactersTable } from "./CharactersTable";
 const { Title } = Typography;
 const { Search } = Input;
 
-export const MAX_PAGE_SIZE = 2;
+export const MAX_PAGE_SIZE = 10;
 
 const MainPage = () => {
   const [searchInput, setSearchInput] = useState("");
